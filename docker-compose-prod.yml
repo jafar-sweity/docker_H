@@ -1,0 +1,6 @@
+version: '3'
+services:
+  nginx-static-website:
+    image: your-dockerhub-username/nginx-static-website:latest
+    ports:
+      - "80:80"

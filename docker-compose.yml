@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nginx-static-website:
+    build:
+      context: .
+    ports:
+      - "8080:80"
