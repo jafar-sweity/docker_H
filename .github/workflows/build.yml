@@ -18,10 +18,12 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t your-dockerhub-jafarSw/nginx-static-website:latest .
-          docker tag your-dockerhub-jafarSw/nginx-static-website:latest your-dockerhub-jafarSw/nginx-static-website:${{ github.sha }}
+          docker build -t docker build -t jafarSw/nginx-static-website:latest .
+          docker tag jafarSw/nginx-static-website:latest jafarSw/nginx-static-website:${{ github.sha }}
 
       - name: Push Docker images to Docker Hub
         run: |
-          docker push your-dockerhub-jafarSw/nginx-static-website:latest
-          docker push your-dockerhub-jafarSw/nginx-static-website:${{ github.sha }}
+          docker push jafarSw/nginx-static-website:latest
+
+          docker push jafarSw/nginx-static-website:${{ github.sha }}
+
