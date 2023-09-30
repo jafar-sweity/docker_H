@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t docker build -t jafarsw/nginx-static-website:latest .
+          docker build -t  jafarsw/nginx-static-website:latest .
           docker tag jafarsw/nginx-static-website:latest jafarsw/nginx-static-website:${{ github.sha }}
 
       - name: Push Docker images to Docker Hub
