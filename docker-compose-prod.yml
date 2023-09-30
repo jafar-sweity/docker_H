@@ -1,6 +1,6 @@
 version: '3'
 services:
   nginx-static-website:
-    image: jafarSw/nginx-static-website:latest
+    image: jafarsw/nginx-static-website:latest
     ports:
       - "80:80"
